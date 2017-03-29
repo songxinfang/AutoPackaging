@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewHomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeCellBackImage" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-Ih-aXU">
+                        <rect key="frame" x="0.0" y="0.0" width="74" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aSz-Ih-aXU" secondAttribute="height" multiplier="36:43" id="C4b-dF-gI4"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gx-21-LIh">
+                        <rect key="frame" x="27" y="77" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7Gx-21-LIh" secondAttribute="height" multiplier="1:1" id="3cd-0X-BE5"/>
+                            <constraint firstAttribute="width" constant="20" id="wu7-kr-eDt"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈哈哈" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-Oc-cXc">
+                        <rect key="frame" x="10" y="10" width="54" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411764705883" green="0.50196078431372548" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="meR-Oc-cXc" firstAttribute="leading" secondItem="aSz-Ih-aXU" secondAttribute="leading" constant="10" id="D96-XO-YQt"/>
+                <constraint firstItem="meR-Oc-cXc" firstAttribute="trailing" secondItem="aSz-Ih-aXU" secondAttribute="trailing" constant="-10" id="K2i-qn-IWi"/>
+                <constraint firstItem="aSz-Ih-aXU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Yap-rS-YBQ"/>
+                <constraint firstItem="aSz-Ih-aXU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZCg-jg-zrK"/>
+                <constraint firstItem="meR-Oc-cXc" firstAttribute="top" secondItem="aSz-Ih-aXU" secondAttribute="top" constant="10" id="bfe-CE-Awr"/>
+                <constraint firstItem="7Gx-21-LIh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="e0D-zz-ChB"/>
+                <constraint firstAttribute="trailing" secondItem="aSz-Ih-aXU" secondAttribute="trailing" id="g5K-Df-A4c"/>
+                <constraint firstItem="7Gx-21-LIh" firstAttribute="top" secondItem="aSz-Ih-aXU" secondAttribute="bottom" constant="-12" id="kXV-Ot-3cw"/>
+                <constraint firstItem="aSz-Ih-aXU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rLU-kf-e9r"/>
+            </constraints>
+            <size key="customSize" width="134" height="116"/>
+            <connections>
+                <outlet property="GradeViewTopConstraint" destination="kXV-Ot-3cw" id="sXM-w7-DHU"/>
+                <outlet property="GradeViewWidthConstraint" destination="wu7-kr-eDt" id="R42-Rq-L4l"/>
+                <outlet property="backImageView" destination="aSz-Ih-aXU" id="s3d-gv-Ud3"/>
+                <outlet property="contentLabel" destination="meR-Oc-cXc" id="RVB-n1-rXa"/>
+                <outlet property="gardeBackView" destination="7Gx-21-LIh" id="xf6-oP-uk1"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="167"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeCellBackImage" width="70" height="84"/>
+    </resources>
+</document>

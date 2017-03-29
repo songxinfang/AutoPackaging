@@ -1,0 +1,111 @@
+//
+//  SDHeadConfig.pch
+//  SanDong
+//
+//  Created by 杨强 on 16/8/31.
+//  Copyright © 2016年 杨强. All rights reserved.
+//
+
+
+#ifndef SDHeadConfig_pch
+#define SDHeadConfig_pch
+
+#import "UIView+XMGExtension.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+EP.h"
+#import "UIImage+XYWY.h"
+#import "UrlConfig.h"
+#import "UIColor+XYWY.h"
+#import "UIColor+HexColor.h"
+
+#import "ProjectConfiguration.h"
+
+#define MAS_SHORTHAND_GLOBALS
+
+#import <Masonry.h>
+
+
+// 非通用头文件
+#import "QuestionModel.h"
+#import "QuestionsApi.h"
+
+//  统计
+#import "TongJiTool.h"
+
+#define KApp_id  @"5ff8cf917c3d54cb80c26512b4be4cdb"
+#define kPid     @"appstore"
+#define kUserid  @"xywy_BPM"
+
+//  友盟统计appKey
+#define UMAnailyticsKey @"5812fc397666135fcd0000a7"
+#define UMengVersion    [NSString stringWithFormat:@"%@.0", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]
+
+//公司统计
+#define XYWYKey @"暂缺"
+
+/******************* 百度广告  *********************/
+
+// 代码位id
+#define BaiduMobAdsID  @"2058492"
+// 应用id
+#define BaiduMobAdsAPPID @"ccb60059"
+
+/******************* 百度广告  *********************/
+
+#pragma mark - Device macro
+
+#define IS_IPHONE4  (CGSizeEqualToSize(CGSizeMake(320.0f, 480.0f), [[UIScreen mainScreen] bounds].size) ? YES : NO)
+#define IS_IPHONE5  (CGSizeEqualToSize(CGSizeMake(320.0f, 568.0f), [[UIScreen mainScreen] bounds].size) ? YES : NO)
+#define IS_IPHONE6  (CGSizeEqualToSize(CGSizeMake(375.0f, 667.0f), [[UIScreen mainScreen] bounds].size) ? YES : NO)
+#define IS_IPHONE6P (CGSizeEqualToSize(CGSizeMake(414.0f, 736.0f), [[UIScreen mainScreen] bounds].size) ? YES : NO)
+
+
+#pragma mark - iOS version macro
+
+#define CURRENT_SYSTEMVERSION [[UIDevice currentDevice] systemVersion]
+#ifndef IOS_VERSION
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#endif
+
+
+#pragma mark - UI macro
+
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define UI_NAVIGATION_BAR_HEIGHT        44
+#define UI_STATUS_BAR_HEIGHT            20
+#define NAVIGATION_HEIGH 64
+#define LEFT_VIEW_WIDTH (SCREEN_WIDTH - 60)
+
+
+
+//************************************颜色 工具********************************************
+#define XYWYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define XYWYColorA(r, g, b ,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorFromAlphaRGB(rgbValue,a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
+
+
+
+#define NSLog(str, args...) NSLog(@"\t[%s][%d][%s]  %@", strrchr(__FILE__, '/'), __LINE__, sel_getName(_cmd), [NSString stringWithFormat:str , ##args])
+
+
+//#ifdef __OPTIMIZE__
+//#define NSLog(str, args...) NSLog(@"\t[%s][%d][%s]  %@", strrchr(__FILE__, '/'), __LINE__, sel_getName(_cmd), [NSString stringWithFormat:str , ##args])
+////#define FLOG(fmt,...)    NSLog((@"[%@][%d] " fmt),[[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,##__VA_ARGS__)
+//#else
+//#define NSLog(str, args...) ((void)0)
+//#endif
+
+
+
+
+#endif /* SDHeadConfig_pch */

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CustomCollectionSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-Zz-PMT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uPu-ub-483"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topic" translatesAutoresizingMaskIntoConstraints="NO" id="KbF-FI-SxT">
+                    <rect key="frame" x="130" y="66" width="59" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="P36-sm-Hf4"/>
+                        <constraint firstAttribute="width" constant="59" id="Tyv-zg-g6H"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I18-Gw-Y1k">
+                    <rect key="frame" x="16" y="108" width="288" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考题已经全部完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzI-6w-77u">
+                    <rect key="frame" x="78" y="238" width="163.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="I18-Gw-Y1k" firstAttribute="top" secondItem="KbF-FI-SxT" secondAttribute="bottom" constant="16" id="7J8-O7-9H8"/>
+                <constraint firstAttribute="trailing" secondItem="I18-Gw-Y1k" secondAttribute="trailing" constant="16" id="FeV-Nk-J2k"/>
+                <constraint firstItem="RzI-6w-77u" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="MZO-m3-eux"/>
+                <constraint firstItem="KbF-FI-SxT" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="PXW-VT-TIO"/>
+                <constraint firstItem="KbF-FI-SxT" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="RaS-po-lmJ"/>
+                <constraint firstItem="KbF-FI-SxT" firstAttribute="top" secondItem="rOU-Zz-PMT" secondAttribute="bottom" constant="16" id="XJ1-3N-rJd"/>
+                <constraint firstItem="rOU-Zz-PMT" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="dHe-4H-ZNq"/>
+                <constraint firstItem="rOU-Zz-PMT" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="jBb-NS-kXE"/>
+                <constraint firstAttribute="trailing" secondItem="rOU-Zz-PMT" secondAttribute="trailing" id="v3p-9j-NDH"/>
+                <constraint firstItem="I18-Gw-Y1k" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="v62-ot-rAQ"/>
+                <constraint firstItem="RzI-6w-77u" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="ySt-hp-6cT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PXW-VT-TIO"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="TopicLable" destination="I18-Gw-Y1k" id="JNV-6V-yGk"/>
+                <outlet property="adView" destination="rOU-Zz-PMT" id="qtu-Kc-bpu"/>
+                <outlet property="centerLable" destination="RzI-6w-77u" id="55U-HF-N8u"/>
+                <outlet property="topicImageView" destination="KbF-FI-SxT" id="yNj-Aa-HQE"/>
+            </connections>
+            <point key="canvasLocation" x="306" y="123"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="topic" width="59" height="26"/>
+    </resources>
+</document>

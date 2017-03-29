@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExaminationResults">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reusultBack" translatesAutoresizingMaskIntoConstraints="NO" id="XbS-XR-Xu0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="rWX-hX-8ZP"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExaminationResults" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-9S-Bfr">
+                    <rect key="frame" x="68" y="32" width="238" height="204"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="238" id="8st-ou-9YG"/>
+                        <constraint firstAttribute="height" constant="204" id="M27-3Z-mEe"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-c0-TPm">
+                    <rect key="frame" x="174" y="193" width="26" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.79607843137254897" green="0.61176470588235299" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5b-Q2-M4a">
+                    <rect key="frame" x="143" y="197" width="19" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.79607843137254897" green="0.61176470588235299" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iex-cJ-YFS">
+                    <rect key="frame" x="212" y="197" width="19" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.79607843137254897" green="0.61176470588235299" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本次考试共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-wf-jhf">
+                    <rect key="frame" x="141.5" y="266" width="92" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="错题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-rr-XLQ">
+                    <rect key="frame" x="169" y="304" width="37" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCu-7K-yKc">
+                    <rect key="frame" x="16" y="385" width="164" height="44"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.69803921568627447" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xqq-OU-GaC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="考题回顾" image="wrongIcon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="3"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickPracticeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Qq-3q-BV6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wus-ja-5YS">
+                    <rect key="frame" x="16" y="453" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.28235294117647058" green="0.81176470588235294" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="返回首页" image="homeIcon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="3"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickHomeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wu7-yp-ACZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-58-h7J">
+                    <rect key="frame" x="143" y="62" width="89" height="89"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="74"/>
+                    <color key="textColor" red="1" green="0.8784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-b0-9z0">
+                    <rect key="frame" x="195" y="385" width="164" height="44"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.77254901960784317" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="再来一次" image="completed_again">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="self.layer.cornerRadius" value="3"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickexaminationAgainBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="mCD-fg-bto"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XbS-XR-Xu0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Ef-x2-Uv8"/>
+                <constraint firstItem="qf8-58-h7J" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1RQ-Bl-eaF"/>
+                <constraint firstItem="oZi-9S-Bfr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1od-9M-CLc"/>
+                <constraint firstItem="zCu-7K-yKc" firstAttribute="top" secondItem="XbS-XR-Xu0" secondAttribute="bottom" constant="35" id="35m-Bg-3lP"/>
+                <constraint firstItem="Wus-ja-5YS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6XS-sd-MqJ"/>
+                <constraint firstItem="Wus-ja-5YS" firstAttribute="height" secondItem="zCu-7K-yKc" secondAttribute="height" id="6yH-ag-SH4"/>
+                <constraint firstItem="XbS-XR-Xu0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7MB-kS-qR4"/>
+                <constraint firstItem="b8c-b0-9z0" firstAttribute="height" secondItem="zCu-7K-yKc" secondAttribute="height" id="8bw-Lj-3at"/>
+                <constraint firstItem="Wus-ja-5YS" firstAttribute="top" secondItem="zCu-7K-yKc" secondAttribute="bottom" constant="24" id="9Rz-Aw-Wcc"/>
+                <constraint firstItem="zCu-7K-yKc" firstAttribute="width" secondItem="Wus-ja-5YS" secondAttribute="width" multiplier="1/2" constant="-8" id="EAb-bi-Kpj"/>
+                <constraint firstItem="ceq-c0-TPm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="193" id="Gh7-Xz-Dbn"/>
+                <constraint firstItem="b8c-b0-9z0" firstAttribute="width" secondItem="zCu-7K-yKc" secondAttribute="width" id="ICt-nv-g1S"/>
+                <constraint firstItem="5fm-rr-XLQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Iij-Ap-Fbz"/>
+                <constraint firstAttribute="trailing" secondItem="XbS-XR-Xu0" secondAttribute="trailing" id="K8E-rN-Tbk"/>
+                <constraint firstAttribute="trailing" secondItem="Wus-ja-5YS" secondAttribute="trailing" constant="16" id="KTm-Px-TPO"/>
+                <constraint firstItem="zCu-7K-yKc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="OHp-lL-cij"/>
+                <constraint firstItem="ceq-c0-TPm" firstAttribute="leading" secondItem="A5b-Q2-M4a" secondAttribute="trailing" constant="12" id="PlQ-Tm-EuF"/>
+                <constraint firstItem="b8c-b0-9z0" firstAttribute="top" secondItem="zCu-7K-yKc" secondAttribute="top" id="TzE-ZP-YiM"/>
+                <constraint firstItem="iex-cJ-YFS" firstAttribute="centerY" secondItem="ceq-c0-TPm" secondAttribute="centerY" id="UvF-s3-G4y"/>
+                <constraint firstItem="Wus-ja-5YS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="VKL-tY-16X"/>
+                <constraint firstItem="ceq-c0-TPm" firstAttribute="centerY" secondItem="A5b-Q2-M4a" secondAttribute="centerY" id="btD-yz-9Zv"/>
+                <constraint firstItem="WLe-wf-jhf" firstAttribute="top" secondItem="oZi-9S-Bfr" secondAttribute="bottom" constant="30" id="fNL-qj-nFY"/>
+                <constraint firstItem="oZi-9S-Bfr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="hNn-Ap-kgc"/>
+                <constraint firstItem="5fm-rr-XLQ" firstAttribute="top" secondItem="WLe-wf-jhf" secondAttribute="bottom" constant="16" id="kaO-12-KXh"/>
+                <constraint firstItem="WLe-wf-jhf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lib-wa-pnW"/>
+                <constraint firstItem="qf8-58-h7J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="62" id="n9e-yf-yPK"/>
+                <constraint firstItem="b8c-b0-9z0" firstAttribute="trailing" secondItem="Wus-ja-5YS" secondAttribute="trailing" id="qdE-w8-Ccl"/>
+                <constraint firstItem="ceq-c0-TPm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t16-yf-FPh"/>
+                <constraint firstItem="iex-cJ-YFS" firstAttribute="leading" secondItem="ceq-c0-TPm" secondAttribute="trailing" constant="12" id="vjB-DO-ABc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="WrongCountLable" destination="5fm-rr-XLQ" id="05d-4M-6xM"/>
+                <outlet property="examinationAgainBtn" destination="b8c-b0-9z0" id="em6-b5-Neg"/>
+                <outlet property="homeBtn" destination="Wus-ja-5YS" id="yEu-b0-Wsd"/>
+                <outlet property="practiceBtn" destination="zCu-7K-yKc" id="ehA-bI-WTF"/>
+                <outlet property="rankingLable" destination="ceq-c0-TPm" id="St1-6E-M7X"/>
+                <outlet property="scoreLable" destination="qf8-58-h7J" id="wcL-Hy-fae"/>
+                <outlet property="topicCountLable" destination="WLe-wf-jhf" id="VFX-wb-5BZ"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ExaminationResults" width="238" height="204"/>
+        <image name="completed_again" width="14" height="14"/>
+        <image name="homeIcon" width="15" height="14"/>
+        <image name="reusultBack" width="360" height="448"/>
+        <image name="wrongIcon" width="15" height="14"/>
+    </resources>
+</document>

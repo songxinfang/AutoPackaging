@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeContentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="章节" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-Ci-L1a">
+                    <rect key="frame" x="16" y="0.0" width="25" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-fO-WrM">
+                    <rect key="frame" x="318" y="0.0" width="57" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    <state key="normal" title="全选">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAllBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="2wX-Tb-weq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(第一章)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E3-Fh-u7g">
+                    <rect key="frame" x="45" y="0.0" width="38.5" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-le-nL8">
+                    <rect key="frame" x="0.0" y="41" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xYu-Nm-dmp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7E3-Fh-u7g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="76r-4g-JRA"/>
+                <constraint firstAttribute="trailing" secondItem="xGB-le-nL8" secondAttribute="trailing" id="MRD-Bp-1V5"/>
+                <constraint firstAttribute="bottom" secondItem="7E3-Fh-u7g" secondAttribute="bottom" id="N9u-4Q-jn8"/>
+                <constraint firstAttribute="bottom" secondItem="xGB-le-nL8" secondAttribute="bottom" id="Qrx-ec-J3s"/>
+                <constraint firstItem="hYD-Ci-L1a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rc8-fe-F72"/>
+                <constraint firstItem="7E3-Fh-u7g" firstAttribute="leading" secondItem="hYD-Ci-L1a" secondAttribute="trailing" constant="4" id="Rdx-5w-7xg"/>
+                <constraint firstItem="5ge-fO-WrM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S5K-wp-bxB"/>
+                <constraint firstAttribute="bottom" secondItem="hYD-Ci-L1a" secondAttribute="bottom" id="f1G-ND-QKa"/>
+                <constraint firstItem="hYD-Ci-L1a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="oFI-Nd-hIH"/>
+                <constraint firstAttribute="bottom" secondItem="5ge-fO-WrM" secondAttribute="bottom" id="oXN-BE-vAn"/>
+                <constraint firstAttribute="trailing" secondItem="5ge-fO-WrM" secondAttribute="trailing" id="pFU-ec-Sjh"/>
+                <constraint firstItem="xGB-le-nL8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rbA-op-Z38"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="TitleLable" destination="7E3-Fh-u7g" id="aXl-5Q-FIK"/>
+                <outlet property="selectAllBtn" destination="5ge-fO-WrM" id="MpV-7Q-cDs"/>
+            </connections>
+            <point key="canvasLocation" x="366.5" y="238"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,16 @@
+Information about project "DoctorBuestionBank":
+    Targets:
+        DoctorBuestionBank
+        NewDoctorBuestionBank
+
+    Build Configurations:
+        Debug
+        Release
+
+    If no build configuration is specified and -scheme is not passed then "Release" is used.
+
+    Schemes:
+        DoctorBuestionBank
+        DoctorBuestionBank
+        NewDoctorBuestionBank
+

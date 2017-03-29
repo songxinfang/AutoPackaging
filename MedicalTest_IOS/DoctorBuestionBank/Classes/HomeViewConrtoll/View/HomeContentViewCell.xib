@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeContentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QFV-ws-89t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="Dwb-QO-VfY"/>
+                            <outlet property="delegate" destination="-1" id="NdN-pZ-jjX"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QFV-ws-89t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cpt-pZ-5hH"/>
+                <constraint firstItem="QFV-ws-89t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bT1-Ua-nwO"/>
+                <constraint firstAttribute="bottom" secondItem="QFV-ws-89t" secondAttribute="bottom" id="gPN-AP-irK"/>
+                <constraint firstAttribute="trailing" secondItem="QFV-ws-89t" secondAttribute="trailing" id="t0b-lM-h0X"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="QFV-ws-89t" id="FlK-9t-y8h"/>
+            </connections>
+            <point key="canvasLocation" x="127.5" y="239"/>
+        </collectionViewCell>
+    </objects>
+</document>

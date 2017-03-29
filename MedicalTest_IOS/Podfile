@@ -1,0 +1,22 @@
+platform :ios, '7.0'
+
+
+target "DoctorBuestionBank" do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MRProgress/AFNetworking'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'FMDB'
+pod 'MMDrawerController'
+pod "pop"
+pod 'Masonry'
+pod 'UMengUShare/UI'
+pod 'UMengUShare/Social/Sina'
+pod 'UMengUShare/Social/WeChat'
+pod 'UMengUShare/Social/QQ'
+pod 'UMengUShare/Social/TencentWeibo'
+# 标准版UM统计，含IDFA标识采集
+pod 'UMengAnalytics'
+end

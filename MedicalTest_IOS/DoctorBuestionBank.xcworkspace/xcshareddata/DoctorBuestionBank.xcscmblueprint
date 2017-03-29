@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4E732521936E3DA6AC23F010F1722F45B283331B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4E732521936E3DA6AC23F010F1722F45B283331B" : 0,
+    "C2245B9EBDD14E909F05EE189D77D724FD7530D3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75137A12-C27E-42CD-809B-326557F4DFFF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4E732521936E3DA6AC23F010F1722F45B283331B" : "MedicalTest_IOS\/",
+    "C2245B9EBDD14E909F05EE189D77D724FD7530D3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DoctorBuestionBank",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DoctorBuestionBank.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.op.xywy.com\/BMP\/MedicalTest_IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E732521936E3DA6AC23F010F1722F45B283331B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.op.xywy.com\/FlyDoctor\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C2245B9EBDD14E909F05EE189D77D724FD7530D3"
+    }
+  ]
+}

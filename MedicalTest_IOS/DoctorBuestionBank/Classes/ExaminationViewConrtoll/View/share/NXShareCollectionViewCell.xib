@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NXShareCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="78"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z9y-oK-LhM">
+                        <rect key="frame" x="5" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="A67-8s-mUf"/>
+                            <constraint firstAttribute="width" constant="50" id="kRz-fj-LDg"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="nyZ-jY-RIF"/>
+                            <constraint firstAttribute="height" constant="50" id="ze3-lp-UJS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A67-8s-mUf"/>
+                                <exclude reference="nyZ-jY-RIF"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="NXShareCollectionViewCell" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-CW-SRF">
+                        <rect key="frame" x="0.0" y="60" width="60" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gqI-CW-SRF" secondAttribute="trailing" id="0Yd-L1-KXi"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2LD-E5-nyp"/>
+                <constraint firstAttribute="bottom" secondItem="gqI-CW-SRF" secondAttribute="bottom" constant="1" id="7hJ-cG-3m8"/>
+                <constraint firstAttribute="trailing" secondItem="z9y-oK-LhM" secondAttribute="trailing" id="JzO-Aq-qQb"/>
+                <constraint firstItem="gqI-CW-SRF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Pp7-QV-R1O"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="TpI-3I-crE"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UUh-RG-pmI"/>
+                <constraint firstItem="gqI-CW-SRF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WcG-aj-Cry"/>
+                <constraint firstItem="gqI-CW-SRF" firstAttribute="top" secondItem="z9y-oK-LhM" secondAttribute="bottom" constant="10" id="XDw-IK-h1D"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bV8-qz-JcO"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nkQ-dh-dkQ"/>
+                <constraint firstItem="gqI-CW-SRF" firstAttribute="top" secondItem="z9y-oK-LhM" secondAttribute="bottom" constant="10" id="rte-f1-Rcu"/>
+                <constraint firstItem="z9y-oK-LhM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="w4o-Vm-xH3"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2LD-E5-nyp"/>
+                    <exclude reference="JzO-Aq-qQb"/>
+                    <exclude reference="TpI-3I-crE"/>
+                    <exclude reference="UUh-RG-pmI"/>
+                    <exclude reference="bV8-qz-JcO"/>
+                    <exclude reference="7hJ-cG-3m8"/>
+                    <exclude reference="rte-f1-Rcu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="describe" destination="gqI-CW-SRF" id="eaG-3i-9YB"/>
+                <outlet property="icon" destination="z9y-oK-LhM" id="bdo-Av-0hr"/>
+            </connections>
+            <point key="canvasLocation" x="274" y="189"/>
+        </collectionViewCell>
+    </objects>
+</document>

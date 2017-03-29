@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-S1-d0O">
+                    <rect key="frame" x="0.0" y="424" width="375" height="76"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4M-MC-AVH">
+                            <rect key="frame" x="16" y="16" width="163.5" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="考题练习">
+                                <color key="titleColor" red="0.96470588235294119" green="0.69803921568627447" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickPractice" destination="iN0-l3-epB" eventType="touchUpInside" id="qsH-et-9XF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na0-Wk-Bi2">
+                            <rect key="frame" x="195" y="16" width="163.5" height="44"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="随堂测验">
+                                <color key="titleColor" red="0.28235294117647058" green="0.81176470588235294" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickExamination" destination="iN0-l3-epB" eventType="touchUpInside" id="r1a-EZ-j40"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.41176470588235292" green="0.49803921568627452" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="na0-Wk-Bi2" firstAttribute="height" secondItem="a4M-MC-AVH" secondAttribute="height" id="5Fb-px-hd7"/>
+                        <constraint firstItem="na0-Wk-Bi2" firstAttribute="top" secondItem="a4M-MC-AVH" secondAttribute="top" id="IFP-4c-7s9"/>
+                        <constraint firstAttribute="trailing" secondItem="na0-Wk-Bi2" secondAttribute="trailing" constant="16" id="LAX-d7-L6b"/>
+                        <constraint firstItem="na0-Wk-Bi2" firstAttribute="width" secondItem="a4M-MC-AVH" secondAttribute="width" id="LR9-n4-0qS"/>
+                        <constraint firstItem="a4M-MC-AVH" firstAttribute="leading" secondItem="pXY-S1-d0O" secondAttribute="leading" constant="16" id="RMc-kT-zIJ"/>
+                        <constraint firstAttribute="bottom" secondItem="a4M-MC-AVH" secondAttribute="bottom" constant="16" id="SMK-54-pse"/>
+                        <constraint firstItem="a4M-MC-AVH" firstAttribute="top" secondItem="pXY-S1-d0O" secondAttribute="top" constant="16" id="eNs-Hz-YMY"/>
+                        <constraint firstItem="na0-Wk-Bi2" firstAttribute="leading" secondItem="a4M-MC-AVH" secondAttribute="trailing" constant="16" id="qcT-aP-akg"/>
+                        <constraint firstAttribute="height" constant="76" id="tFm-X2-EhW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pXY-S1-d0O" secondAttribute="trailing" id="CIT-32-XJf"/>
+                <constraint firstAttribute="bottom" secondItem="pXY-S1-d0O" secondAttribute="bottom" id="K2X-Ub-UdY"/>
+                <constraint firstItem="pXY-S1-d0O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="glw-MY-rpQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ExaminationBtn" destination="na0-Wk-Bi2" id="qmP-BG-iaA"/>
+                <outlet property="praticeBtn" destination="a4M-MC-AVH" id="hh9-j7-fnj"/>
+            </connections>
+            <point key="canvasLocation" x="149.5" y="226"/>
+        </view>
+    </objects>
+</document>

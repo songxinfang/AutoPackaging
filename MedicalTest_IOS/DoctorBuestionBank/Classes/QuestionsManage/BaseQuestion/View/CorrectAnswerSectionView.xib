@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CorrectAnswerSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d25-5O-Jid">
+                    <rect key="frame" x="16" y="16" width="2" height="12"/>
+                    <color key="backgroundColor" red="0.43529411764705883" green="0.50196078431372548" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="raz-OS-SnL"/>
+                        <constraint firstAttribute="height" constant="12" id="shg-Pz-A7Z"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答案详解" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ote-2i-OYQ">
+                    <rect key="frame" x="26" y="15" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AnswerIndicateDown" translatesAutoresizingMaskIntoConstraints="NO" id="Me0-kk-r7b">
+                    <rect key="frame" x="344" y="18" width="15" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="S2L-yO-A5s"/>
+                        <constraint firstAttribute="width" constant="15" id="mTw-HE-JhH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展开" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BT5-KS-AdO">
+                    <rect key="frame" x="315" y="15" width="25" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-U3-bNm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FW9-i8-xFh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doB-8f-cPl">
+                    <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FlW-5V-cxO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6tV-U3-bNm" firstAttribute="leading" secondItem="d25-5O-Jid" secondAttribute="trailing" id="1rS-Kj-Ezt"/>
+                <constraint firstItem="d25-5O-Jid" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="3a8-Lj-d6y"/>
+                <constraint firstAttribute="bottom" secondItem="doB-8f-cPl" secondAttribute="bottom" id="9Go-VW-9um"/>
+                <constraint firstItem="Ote-2i-OYQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ax8-MT-WFn"/>
+                <constraint firstAttribute="trailing" secondItem="6tV-U3-bNm" secondAttribute="trailing" id="EY6-Gq-6vm"/>
+                <constraint firstItem="doB-8f-cPl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Eik-yM-Y4I"/>
+                <constraint firstItem="BT5-KS-AdO" firstAttribute="leading" secondItem="6tV-U3-bNm" secondAttribute="trailing" id="HfR-xG-XMu"/>
+                <constraint firstAttribute="trailing" secondItem="doB-8f-cPl" secondAttribute="trailing" id="JEi-AH-ete"/>
+                <constraint firstItem="6tV-U3-bNm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SbT-iz-Ffk"/>
+                <constraint firstAttribute="trailing" secondItem="doB-8f-cPl" secondAttribute="trailing" id="VMz-da-S3y"/>
+                <constraint firstItem="Me0-kk-r7b" firstAttribute="leading" secondItem="BT5-KS-AdO" secondAttribute="trailing" constant="4" id="bf7-LT-G5n"/>
+                <constraint firstItem="Ote-2i-OYQ" firstAttribute="leading" secondItem="d25-5O-Jid" secondAttribute="trailing" constant="8" id="fPU-U2-1ak"/>
+                <constraint firstItem="BT5-KS-AdO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jFz-al-mao"/>
+                <constraint firstItem="Me0-kk-r7b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oG1-AE-Dy3"/>
+                <constraint firstItem="d25-5O-Jid" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ozE-aX-GLU"/>
+                <constraint firstAttribute="trailing" secondItem="Me0-kk-r7b" secondAttribute="trailing" constant="16" id="sRc-Tr-ugj"/>
+                <constraint firstItem="6tV-U3-bNm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xNX-7B-iEv"/>
+                <constraint firstItem="doB-8f-cPl" firstAttribute="leading" secondItem="Ote-2i-OYQ" secondAttribute="trailing" id="yk3-bv-Uao"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1rS-Kj-Ezt"/>
+                    <exclude reference="VMz-da-S3y"/>
+                    <exclude reference="yk3-bv-Uao"/>
+                    <exclude reference="HfR-xG-XMu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="IndicateImageView" destination="Me0-kk-r7b" id="HhJ-sy-KMk"/>
+                <outlet property="IndicateTitleLable" destination="BT5-KS-AdO" id="hxj-3i-2Ec"/>
+            </connections>
+            <point key="canvasLocation" x="383.5" y="118.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AnswerIndicateDown" width="7" height="4"/>
+    </resources>
+</document>
